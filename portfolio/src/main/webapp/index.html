@@ -1,22 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts used -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>Emmanuel Bolteada</h1>
-      <p>This is my portfolio.</p>
-      <img src="/images/rubik (1).png"/>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+    <title>Emmanuel Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="cont-items">
+                <ul>
+                    <li><a href=""><span>01.</span>About Me</a></li>
+                    <li><a href=""><span>02.</span>Projects</a></li>
+                    <li><a href=""><span>03.</span>Contact</a></li>
+                    <li><a href=""><span>04.</span>More</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="title1">Emmanuel.</h1>
+            <h1 class="title2">I design & build software products.</h1>
+            <div class="cont-text">
+                <p>I'm a sophomore Computer Science student at Tecnológico de Monterrey, México. I enjoy developing projects with a social component and learning new things from everyone.</p>
+            </div>
+        </section>
+        <section class="about-me">
+            <div class="cont-lines">
+                <div class="vl1"></div>
+                <div class="vl2"></div>
+            </div>
+            <div class="cont-texts">
+                <h1><span>01.</span>About me</h1>
+                <p class="t1">I'm Emmanuel Bolteada, a Mexican software developer and student with passion for technology and design. </p>
+                <p class="t2">One of my goals is to reduce the educational gap in my country through teaching everyone the potential computer science has to solve social problems. I also come from an indigenous culture background, and I hope to spread consciousness
+                    about cultural diversity through the use of technologies.</p>
+                <div class="skills">
+                    <p>Set of skills: </p>
+                    <div class="s1">
+                        <ul>
+                            <li>C++</li>
+                            <li>Python</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                    <div class="s2">
+                        <ul>
+                            <li>HTML, CSS</li>
+                            <li>Bootstrap</li>
+                            <li>UI Design tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cont-picture">
+                <img src="" alt="">
+                <button class="resume"></button>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="title">
+                <h1><span>02. </span>Projects</h1>
+            </div>
+            <div class="cont-cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <p class="card-title"></p>
+                    <p class="card-description"></p>
+                    <div class="card-tags"></div>
+                    <div class="card-resources"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-me">
+            <div class="cont-lines">
+                <div class="vl1"></div>
+                <div class="vl2"></div>
+            </div>
+            <h1><span>03. </span>Contact me</h1>
+            <div class="cont-items">
+                <div class="cont-text">
+
+                </div>
+                <div class="cont-media">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="more">
+            <div class="title">
+                <h1><span>04. </span>More stuff about me!</h1>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
