@@ -13,14 +13,17 @@ body {
     color: #DFDFDF;
 }
 
-header nav {
+header {
+    width: 100%;
     margin-top: 50px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 header .cont-items {
     width: 50%;
+    
 }
 
 header .cont-items ul {
@@ -46,13 +49,13 @@ main {
 
 main .intro {
     margin-top: 250px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
 }
 
 main .intro .greeting {
     font-family: 'Fira code';
     color: #90EFDF;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 main .intro .title1 {
@@ -76,6 +79,7 @@ main .intro .cont-text {
 }
 
 main .about-me {
+    margin-top: 400px;
     display: flex;
     flex-direction: row;
     margin-bottom: 300px;
@@ -158,9 +162,13 @@ main .about-me .cont-picture img {
     width: 50%;
 }
 
+main .about-me .cont-picture a{
+  margin-top: 100px;
+  width: 80%;
+  
+}
 main .about-me .cont-picture .resume {
-    margin-top: 100px;
-    width: 80%;
+    width: 100%;
     font-family: 'Rubik';
     font-weight: bold;
     color: #90EFDF;
@@ -168,6 +176,12 @@ main .about-me .cont-picture .resume {
     padding: 30px;
     background: rgba(0, 0, 0, 0);
     border: 1px solid #90EFDF;
+    cursor: pointer;
+}
+
+main .about-me .cont-picture .resume:hover {
+  background: #90EFDF;
+  color: #222533;
 }
 
 main .projects {
@@ -228,6 +242,7 @@ main .projects .card .card-title {
 }
 
 main .projects .card .card-description {
+    font-family: 'Roboto';
     text-align: justify;
     color: #DFDFDF;
     margin-bottom: 30px;
@@ -265,7 +280,8 @@ main .contact-me h1{
   font-size: 50px;
     font-family: 'Fira Code';
     font-weight: 400;
-    margin-left: 700px;
+    align-self: flex-end;
+    margin-right: 150px;
 }
 
 main .contact-me .cont-contact{
@@ -330,7 +346,7 @@ main .more .title {
   align-self: center;
   text-align: center;
   padding: 20px;
-  width: 50%;
+  width: 70%;
   border-bottom: 1px solid #8892B0;
   margin-bottom: 100px;
 }
@@ -342,27 +358,40 @@ main .more .title h1 {
 }
 
 main .more .cont-items{
-  display: flex;
-  flex-direction: column;
+ display: inline-grid;
 }
 
 
 
 main .more .profile1{
-  margin-right: 500px;
+  width: 80%;
+  justify-self: start;
+  display: inline-grid;
 }
 
 
 
 main .more .profile1 .cont-img{
+  width: 380px;
+  height: 250px;
+  background: linear-gradient( rgba(38, 218, 164, 0.45),  rgba(39, 171, 194, 0.45) ),url('./images/Imagen 1.png');
+  background-size: cover;
+  justify-self: start;
   position: absolute;
   margin-top: -30px;
 }
 
-main .more .profile1 .cont-img img{
-  
-  width: 350px;
+
+main .more .profile1 .cont-img:hover{
+  background: linear-gradient( rgba(38, 218, 164, 0),  rgba(39, 171, 194, 0) ),url('./images/Imagen 1.png');
+  width: 380px;
+  height: 250px;
+  background-size: cover;
+  justify-self: start;
+  position: absolute;
+  margin-top: -30px;
 }
+
 
 main .more .profile1 .cont-item{
   margin-top: 50px;
@@ -377,17 +406,27 @@ main .more .profile1 .cont-item{
 
 main .more .profile1 .cont-item .cont-text{
   width: 80%;
+  font-family: 'Roboto';
   margin-left:200px;
+  text-align: justify;
 }
 main .more .profile1 .cont-item .cont-text .header{
   display: flex;
   flex-direction: row;
 }
-main .more .profile1 .cont-item .cont-text .header i{
-  color: #90EFDF;
+
+main .more .profile1 .cont-item .cont-text .header .fa-spotify{
+  color: #1db954;
   font-size: 30px;
   margin-left: 30px;
 }
+
+main .more .profile1 .cont-item .cont-text .header .fa-external-link-alt{
+  color: #90EFDF;
+  font-size: 30px;
+  margin-left: 250px;
+}
+
 main .more .profile1 .cont-item .cont-text h3{
   margin-bottom: 30px;
 }
@@ -395,22 +434,16 @@ main .more .profile1 .cont-item .cont-text h3{
 
 
 main .more .profile2{
-  margin-left: 500px;
+  width: 80%;
+  justify-self: end;
+  display: inline-grid;
 }
 
-main .more .profile2 .cont-img{
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 480px;
-}
 
-main .more .profile2 .cont-img img{
-  width: 350px;
-}
 
 main .more .profile2 .cont-item{
   font-size: 20px;
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 50px;
   background: #222533;
   width: 70%;
@@ -420,9 +453,59 @@ main .more .profile2 .cont-item{
 
 main .more .profile2 .cont-item .cont-text{
   width: 80%;
+  font-family: 'Roboto';
   margin-right:200px;
+  text-align: justify;
+}
+main .more .profile2 .cont-item .cont-text .header{
+  display: flex;
+  flex-direction: row;
+}
+
+main .more .profile2 .cont-item .cont-text .header img{
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+}
+main .more .profile2 .cont-item .cont-text .header .fa-external-link-alt{
+  color: #90EFDF;
+  font-size: 30px;
+  margin-left: 250px;
 }
 
 main .more .profile2 .cont-item .cont-text h3{
   margin-bottom: 30px;
+}
+
+main .more .profile2 .cont-img{
+  width: 420px;
+  height: 250px;
+  background: linear-gradient( rgba(38, 218, 164, 0.45),  rgba(39, 171, 194, 0.45) ),url('./images/Imagen 2.png');
+  background-size: cover;
+  justify-self: end;
+  position: absolute;
+  margin-top: 100px;
+}
+
+
+main .more .profile2 .cont-img:hover{
+  background: linear-gradient( rgba(38, 218, 164, 0),  rgba(39, 171, 194, 0) ),url('./images/Imagen 2.png');
+  width: 420px;
+  height: 250px;
+  background-size: cover;
+  justify-self: end;
+  position: absolute;
+  margin-top: 100px;
+}
+
+
+footer{
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+footer h3{
+  font-family: 'Fira Code';
+  color: #90EFDF;
+  font-weight: 500;
 }
