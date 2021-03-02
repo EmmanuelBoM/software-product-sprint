@@ -1,19 +1,220 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts used -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9e8b427c6.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-  </head>
-  <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
-    </div>
-  </body>
+    <title>Emmanuel Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <div class="cont-items">
+            <ul>
+                <li><a href="#about-me"><span>01.</span>About Me</a></li>
+                <li><a href="#projects"><span>02.</span>Projects</a></li>
+                <li><a href="#contact-me"><span>03.</span>Contact</a></li>
+                <li><a href="#more"><span>04.</span>More</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="greeting">Hi, my name is</p>
+            <h1 class="title1">Emmanuel.</h1>
+            <h1 class="title2">I design & build software products.</h1>
+            <div class="cont-text">
+                <p>I'm a sophomore Computer Science student at Tecnológico de Monterrey, México. I enjoy developing projects with a social component and learning new things from everyone.</p>
+            </div>
+        </section>
+
+        <section class="about-me" id="about-me">
+            <div class="title">
+                <h1 class="subtitle"><span>01.</span>About me</h1>
+            </div>
+            <div class="cont-about">
+                <div class="cont-lines">
+                    <div class="vl1"></div>
+                    <div class="vl2"></div>
+                </div>
+                <div class="cont-texts">
+                    
+                    <p class="t1">I'm Emmanuel Bolteada, a Mexican software developer and student with passion for technology and design. </p>
+                    <p class="t2">One of my goals is to reduce the educational gap in my country through teaching everyone the potential computer science has to solve social problems. I also come from an indigenous culture background, and I hope to spread consciousness
+                        about cultural diversity through the use of technologies.</p>
+                    <p>Set of skills: </p>
+                    <div class="skills">
+                        <div class="s1">
+                            <ul>
+                                <li><i class="fas fa-spinner"></i> C++</li>
+                                <li><i class="fas fa-spinner"></i> Python</li>
+                                <li><i class="fas fa-spinner"></i> Javascript</li>
+                            </ul>
+                        </div>
+                        <div class="s2">
+                            <ul>
+                                <li><i class="fas fa-spinner"></i> HTML, CSS</li>
+                                <li><i class="fas fa-spinner"></i> Bootstrap</li>
+                                <li><i class="fas fa-spinner"></i> UI Design tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-picture">
+                    <img src="./images/profile-pic.png" alt="">
+                    <a href="./resources/Emmanuel Bolteada Resume.pdf" download="Emmanuel Bolteada Resume.pdf"><button class="resume"> Download my resume</button></a>
+                </div>
+            </div>
+            
+            
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="title">
+                <h1 class="subtitle" ><span>02.</span>Projects</h1>
+            </div>
+            <div class="cont-cards">
+                <div class="card">
+                    <img src="./images/estuo.png" alt="">
+                    <h4 class="card-title">Estuo</h4>
+                    <p class="card-description">Web app to reduce college dropouts in Mexico by giving students the opportunity to track university application dates, scholarships and free courses.</p>
+                    <div class="card-tags">
+                        <div class="tag">
+                            <p>HTML</p>
+                        </div>
+                        <div class="tag">
+                            <p>CSS</p>
+                        </div>
+                        <div class="tag">
+                            <p>Firebase</p>
+                        </div>
+                        <div class="tag">
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                    <div class="card-resources">
+                        <a href="https://github.com/EmmanuelBoM/estuo-TH2021"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img class="logo" src="./images/vestivalle.png" alt="">
+                    <h4 class="card-title">Nsehe Hñahñu</h4>
+                    <p class="card-description">Desktop app developed to preserve and promote Hñähñu Indigenous Language in Mexico by teaching elementary school students basic words through an interactive game-like application.</p>
+                    <div class="card-tags">
+                        <div class="tag">
+                            <p>C#</p>
+                        </div>
+                        <div class="tag">
+                            <p>.NET</p>
+                        </div>
+                        <div class="tag">
+                            <p>WPF</p>
+                        </div>
+                        <div class="tag">
+                            <p>XAML</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <img class="logo" src="./images/coinfee.png" alt="">
+                    <h4 class="card-title">Coinfee</h4>
+                    <p class="card-description">Desktop app that allows schools to easily manage their alumni and teacher Data Base. Makes payment of Tuition and Costs process easier and more efficient.</p>
+                    <div class="card-tags">
+                        <div class="tag">
+                            <p>C#</p>
+                        </div>
+                        <div class="tag">
+                            <p>.NET</p>
+                        </div>
+                        <div class="tag">
+                            <p>WPF</p>
+                        </div>
+                        <div class="tag">
+                            <p>SQL Server</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-me" id="contact-me">
+            <div class="title">
+                <h1 class="subtitle" ><span>03.</span>Contact me</h1>
+            </div>
+            <div class="cont-contact">
+                <div class="cont-items">
+                    <div class="cont-text">
+                        <h3><span>Email: </span>A01276310@itesm.mx</h3>
+                    </div>
+                    <div class="cont-media">
+                        <a href="https://www.linkedin.com/in/emmanuel-bolteada-manzo-5408471b8/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/EmmanuelBoM"><i class="fab fa-github-square"></i></a>
+                        <a href="https://devpost.com/EmmanuelBoM"><i class="fab fa-dev"></i></a>
+                        <a href="https://www.instagram.com/emmanuelbm_/"><i class="fab fa-instagram-square"></i></a>
+                    </div>
+                </div>
+                <div class="cont-lines">
+                    <div class="vl1"></div>
+                    <div class="vl2"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="more" id="more">
+            <div class="title">
+                <h1 class="subtitle" ><span>04. </span>More stuff about me!</h1>
+            </div>
+            <div class="cont-items">
+                <div class="profile">
+                    <div class="cont-img"></div>
+                    <div class="cont-item">
+                        <div class="cont-text">
+                            <div class="header">
+                                <i class="fab fa-spotify"></i>
+                                <h3>My spotify Profile</h3>
+                                
+                                <a href="https://open.spotify.com/user/74bsy9t4vu8gi69z7gdlmlbsa"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <p>I love listening (and playing) music, and enjoy discovering new songs and genres. Come see my favorite songs and artists, and collaborate in some of my playlists!</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <div class="cont-img2"></div>
+                    <div class="cont-item">
+                        <div class="cont-text">
+                            <div class="header">
+                                <img src="./images/wcalogo.svg" alt="">
+                                <h3>My WCA Profile</h3>
+                                <a href="https://www.worldcubeassociation.org/persons/2017MANZ01"><i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <p> I enjoy solving Rubik's cubes and other puzzles professionally. World Cube Association is the home for Speedcubing world competitors, come see some of my official records in tournaments.</p>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Emmanuel Bolteada Manzo. 2021.</h3>
+    </footer>
+</body>
+
 </html>
