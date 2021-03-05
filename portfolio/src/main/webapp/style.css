@@ -98,24 +98,6 @@ main .intro .cont-text {
 }
 
 
-main .intro .cont-quote{
-    margin-top:100px;
-    width: 40%;
-    font-style: italic;
-    font-size:1vw;
-    text-align:center;
-}
-
-main .intro .cont-quote button{
-    margin-top:30px;
-    padding:30px;
-    font-size:1vw;
-    color:#DFDFDF;
-    border-style:none;
-    border:3px solid #DFDFDF;
-     background: rgba(0, 0, 0, 0);
-    font-family: 'Fira Code';
-}
 
 main .about-me {
     margin-top: 400px;
@@ -429,7 +411,7 @@ main .more .cont-items {
 main .more .profile {
     width: 60%;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -516,13 +498,39 @@ main .more .profile .cont-item .cont-text .header .fa-external-link-alt {
 
 main .more .profile .cont-item .cont-text h3 {
     width: 40%;
-    
     text-align: center;
 }
 
 main .more .profile img {
     width: 35px;
     height: 35px;
+}
+
+main .more .cont-quote{
+    margin-top:100px;
+    width: 40%;
+    font-style: italic;
+    font-size:1.5vw;
+    text-align:center;
+}
+
+main .more .cont-quote button{
+    cursor:pointer;
+    margin-top:30px;
+    padding:30px;
+    font-size:1.5vw;
+    color:#DFDFDF;
+    border-style:none;
+    border:3px solid #DFDFDF;
+     background: rgba(0, 0, 0, 0);
+    font-family: 'Fira Code';
+}
+main .more .cont-quote button:hover{
+    background:#DFDFDF;
+    color:#222533;
+}
+main .more .cont-quote button:focus{
+    outline:none;
 }
 
 
