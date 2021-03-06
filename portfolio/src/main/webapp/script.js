@@ -12,25 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-      ['I solve the rubiks cube in under 17 seconds!', 'Harry potter fan and Ravenclaw student', 'I belong to Hñahñu indigenous culture <3', 'Hola mundo!'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
 
 async function getQuote(){
     const responseFromServer = await fetch('/hello-world');
-    const textFromResponse = await responseFromServer.text();
+    const quotes = await responseFromServer.json();
 
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+   
     const dateContainer = document.getElementById('favorite-quote');
-    dateContainer.innerText = textFromResponse;
+    dateContainer.innerText = quote;
 }
