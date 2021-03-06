@@ -94,6 +94,27 @@ main .intro .cont-text {
     font-family: 'Roboto';
     font-size: 20px;
     color: #8892B0;
+    margin-bottom:30px;
+}
+
+
+main .intro .cont-quote{
+    margin-top:100px;
+    width: 40%;
+    font-style: italic;
+    font-size:1vw;
+    text-align:center;
+}
+
+main .intro .cont-quote button{
+    margin-top:30px;
+    padding:30px;
+    font-size:1vw;
+    color:#DFDFDF;
+    border-style:none;
+    border:3px solid #DFDFDF;
+     background: rgba(0, 0, 0, 0);
+    font-family: 'Fira Code';
 }
 
 main .about-me {
