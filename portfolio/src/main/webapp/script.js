@@ -11,20 +11,8 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
-
-async function getQuote(){
-    const responseFromServer = await fetch('/hello-world');
-    const quotes = await responseFromServer.json();
-
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
-
-   
-    const dateContainer = document.getElementById('favorite-quote');
-    dateContainer.innerText = quote;
-}
 
 function drawChart() {
     fetch('/prog-lang').then(response => response.json())
@@ -42,7 +30,8 @@ function drawChart() {
         'is3D':false,
         'backgroundColor': {
             'fill': '#FF0000',
-            'fillOpacity': 0
+            'fillOpacity': 0,
+            'stroke':'#000000'
         },
         'legend':{
             'textStyle':{
@@ -52,6 +41,19 @@ function drawChart() {
                 'bold': true
             },
         'alignment':'center'
+        },
+        'pieHole':0.4,
+        'colors':["#86f9e5","#0d3b66","#a09ebb","#f8e16c","#fb8f67","#a40e4c","#963484"],
+        'pieSliceTextStyle':{
+            'color':'#000',
+            'fontName': 'Rubik',
+            'fontSize': 16,
+            'bold': true
+        },
+        'pieSliceBorderColor':'none',
+        'chartArea':{
+            'width':'100%',
+            'height':'100%'
         }
     };
    
@@ -61,3 +63,15 @@ function drawChart() {
     chart.draw(data, options);
   });
 }
+
+async function getQuote(){
+    const responseFromServer = await fetch('/hello-world');
+    const quotes = await responseFromServer.json();
+
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+   
+    const dateContainer = document.getElementById('favorite-quote');
+    dateContainer.innerText = quote;
+}
+

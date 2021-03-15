@@ -565,7 +565,9 @@ main .more .radios form label{
  }
 
  main .more .radios form .submit-answer{
-     margin-top: 20px;
+    font-family: 'Rubik';
+    font-weight: bold;
+    margin-top: 20px;
     font-size: 1.2vw;
     border-style: none;
     background: #90EFDF;

@@ -25,7 +25,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 @WebServlet("/prog-lang")
-public class ColorDataServlet extends HttpServlet {
+public class ProgrammingLanguagesServlet extends HttpServlet {
 
   private Map<String, Integer> languageVotes = new HashMap<>();
 
