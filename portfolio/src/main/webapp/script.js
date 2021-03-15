@@ -59,4 +59,5 @@ function drawChart() {
     const chart = new google.visualization.PieChart(
         document.getElementById('cont-chart'));
     chart.draw(data, options);
-  }
+  });
+}
