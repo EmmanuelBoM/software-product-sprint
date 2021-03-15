@@ -534,6 +534,51 @@ main .more .cont-quote button:focus{
 }
 
 
+main .more .interactive-chart{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+main .more .interactive-chart .content{
+    display: flex;
+    flex-direction: row;
+}
+
+main .more .radios{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+main .more .radios form{
+   display: flex;
+   flex-direction: column;
+   font-size: 1.2vw;
+}
+
+
+main .more .radios form label{
+    margin-bottom: 15px;
+ }
+
+ main .more .radios form .submit-answer{
+     margin-top: 20px;
+    font-size: 1.2vw;
+    border-style: none;
+    background: #90EFDF;
+    padding: 10px;
+ }
+ 
+ main .more .radios form .submit-answer:hover{
+    cursor: pointer;
+ }
+
+
+
+
 /* FOOTER */
 
 footer {

@@ -27,22 +27,34 @@ async function getQuote(){
 }
 
 function drawChart() {
-    const data = new google.visualization.DataTable();
-    data.addColumn('string', 'Most experienced with languages');
-    data.addColumn('number', 'Count');
-          data.addRows([
-            ['C++', 15],
-            ['Python', 8],
-            ['C#', 6],
-            ['Javascript', 6],
-          ]);
+    fetch('/prog-lang').then(response => response.json())
+    .then((languageVotes) => {
+        const data = new google.visualization.DataTable();
+        data.addColumn('string', 'Language');
+        data.addColumn('number', 'Votes');
+        Object.keys(languageVotes).forEach((language) => {
+        data.addRow([language, languageVotes[language]]);
+        });
   
     const options = {
-      'title': 'Most experienced with languages',
-      'width':600,
-      'height':400,
-      'is3D':false
+        'width':700,
+        'height':350,
+        'is3D':false,
+        'backgroundColor': {
+            'fill': '#FF0000',
+            'fillOpacity': 0
+        },
+        'legend':{
+            'textStyle':{
+                'color': '#FFFFFF',
+                'fontName': 'Rubik',
+                'fontSize': 16,
+                'bold': true
+            },
+        'alignment':'center'
+        }
     };
+   
   
     const chart = new google.visualization.PieChart(
         document.getElementById('cont-chart'));
