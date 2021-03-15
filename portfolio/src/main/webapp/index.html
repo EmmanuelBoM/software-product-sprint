@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f9e8b427c6.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="script.js"></script>
     <title>Emmanuel Portfolio</title>
 </head>
@@ -214,6 +215,58 @@
                     <p id="favorite-quote"></p>
                     <button onclick="getQuote();">Click here to see some of my favorite quotes</button>
                 </div>
+                
+               
+                <div class="interactive-chart">
+                    <div class="title">
+                        <h3>Let's get to know better! What is your favorite programming language?</h3>
+                    </div>
+                    <div class="content">
+                        <div class="radios">
+                            <form action="/prog-lang" method="POST">
+                                
+                                <label for="radio_c++">
+                                    <input type="radio" name="language" id="radio_c++" value="C++">
+                                    C++
+                                </label>
+
+                                <label for="radio_python">
+                                    <input type="radio" name="language" id="radio_python" value="Python">
+                                    Python
+                                </label>
+                                
+                                <label for="radio_java">
+                                    <input type="radio" name="language" id="radio_java" value="Java">
+                                    Java
+                                </label>
+                                
+                                <label for="radio_c">
+                                    <input type="radio" name="language" id="radio_c" value="C">
+                                    C
+                                </label>
+                                
+                                <label for="radio_javascript">
+                                    <input type="radio" name="radios" id="radio_javascript" value="Javascript">
+                                    Javascript
+                                </label>
+                                
+                                <label for="radio_c#">
+                                    <input type="radio" name="language" id="radio_c#" value="C#">
+                                    C#
+                                </label>
+
+                                <label for="radio_other">
+                                    <input type="radio" name="language" id="radio_other" value="Other">
+                                    Other
+                                </label>
+                                <button class="submit-answer">Submit Answer</button>
+                            </form>
+                        </div>
+                        <div id = "cont-chart" class="cont-chart"></div>
+                    </div>
+                    
+                </div>
+                
             </div>
         </section>
     </main>
