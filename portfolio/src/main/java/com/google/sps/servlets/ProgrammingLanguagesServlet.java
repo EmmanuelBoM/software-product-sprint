@@ -41,7 +41,7 @@ public class ProgrammingLanguagesServlet extends HttpServlet {
   public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
     String language = request.getParameter("language");
     int currentVotes = languageVotes.containsKey(language) ? languageVotes.get(language) : 0;
-    lanuageVotes.put(language, currentVotes + 1);
+    languageVotes.put(language, currentVotes + 1);
 
     response.sendRedirect("/index.html");
   }
