@@ -12,6 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
 
 async function getQuote(){
     const responseFromServer = await fetch('/hello-world');
@@ -23,3 +25,26 @@ async function getQuote(){
     const dateContainer = document.getElementById('favorite-quote');
     dateContainer.innerText = quote;
 }
+
+function drawChart() {
+    const data = new google.visualization.DataTable();
+    data.addColumn('string', 'Most experienced with languages');
+    data.addColumn('number', 'Count');
+          data.addRows([
+            ['C++', 15],
+            ['Python', 8],
+            ['C#', 6],
+            ['Javascript', 6],
+          ]);
+  
+    const options = {
+      'title': 'Most experienced with languages',
+      'width':600,
+      'height':400,
+      'is3D':false
+    };
+  
+    const chart = new google.visualization.PieChart(
+        document.getElementById('cont-chart'));
+    chart.draw(data, options);
+  }
